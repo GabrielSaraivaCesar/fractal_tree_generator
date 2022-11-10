@@ -142,10 +142,7 @@ interval = setInterval(() => {
         document.querySelector("input[name=startAngle]").value = startAngle;
     }
 
-    let yStart = canvas.height;
-    if (fractalAmount > 1 || animationOn) {
-        yStart = canvas.height/2;
-    }
+    let yStart = canvas.height/2;
 
 
     for (let i = 1; i <= fractalAmount; i++) {
